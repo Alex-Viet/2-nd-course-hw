@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+  height: 100%;
+}
+
+.top {
+  height: 1024px;
+  background-image: url(../img/bg-top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  padding-top: 217px;
+}
+.top__text {
+  max-width: 481px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-top: 19px;
+  padding-bottom: 44px;
+}
+.top__button {
+  width: 234px;
+  height: 49px;
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.top__button:hover {
+  cursor: url("../img/cursor.svg"), pointer;
+  background: #EB443F;
+}
+
+.content {
+  background: #000915;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 144px 0;
+}
+.game__link:hover .game__box {
+  cursor: url("../img/cursor.svg"), pointer;
+  border: 3px solid #44D2FF;
+  box-sizing: border-box;
+}
+.game__box {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+.game__box--bg1 {
+  background-image: url(../img/game-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game__box--bg2 {
+  background-image: url(../img/game-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 378px;
+}
+.game__box--bg3 {
+  background-image: url(../img/game-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding: 0 0 32px 32px;
+}/*# sourceMappingURL=style.css.map */
