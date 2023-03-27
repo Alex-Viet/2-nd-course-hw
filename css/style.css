@@ -77,31 +77,31 @@ body {
   border: 3px solid #44D2FF;
   box-sizing: border-box;
 }
-.game__box {
-  width: 379px;
-  height: 300px;
-  border-radius: 16px;
-  display: flex;
-  align-items: flex-end;
-}
-.game__box--bg1 {
+.game__link:first-child .game__box {
   background-image: url(../img/game-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.game__box--bg2 {
+.game__link:nth-child(2) .game__box {
   background-image: url(../img/game-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 378px;
 }
-.game__box--bg3 {
+.game__link:nth-child(3) .game__box {
   background-image: url(../img/game-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.game__box {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
 }
 .game__name {
   font-style: normal;

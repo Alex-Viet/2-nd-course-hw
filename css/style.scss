@@ -92,28 +92,30 @@ body {
         box-sizing: border-box;
     }
 
+    &__link {
+        &:first-child .game__box {
+            background-image: url(../img/game-1.jpg);
+            @include bground ();
+        }
+
+        &:nth-child(2) .game__box {
+            background-image: url(../img/game-2.jpg);
+            @include bground ();
+            width: 378px;
+        }
+
+        &:nth-child(3) .game__box {
+            background-image: url(../img/game-3.jpg);
+            @include bground ();
+        }
+    }
+
     &__box {
         width: 379px;
         height: 300px;
         border-radius: 16px;
         display: flex;
         align-items: flex-end;
-
-        &--bg1 {
-            background-image: url(../img/game-1.jpg);
-            @include bground ();
-        }
-
-        &--bg2 {
-            background-image: url(../img/game-2.jpg);
-            @include bground ();
-            width: 378px;
-        }
-
-        &--bg3 {
-            background-image: url(../img/game-3.jpg);
-            @include bground ();
-        }
     }
 
     &__name {
