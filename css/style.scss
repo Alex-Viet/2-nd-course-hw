@@ -1,0 +1,129 @@
+$font-white: #FFFFFF;
+$width-game: 379px;
+$gap: 32px;
+
+@mixin bground () {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    // padding-left: calc(50% - 600px);
+    // padding-right: calc(50% - 600px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 120px;
+    height: 100%;
+}
+
+.top {
+    height: 1024px;
+    background-image: url(../img/bg-top.jpg);
+    @include bground ();
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: $font-white;
+        padding-top: 217px;
+    }
+
+    &__text {
+        max-width: 481px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $font-white;
+        padding-top: 19px;
+        padding-bottom: 44px;
+    }
+
+    &__button {
+        width: 234px;
+        height: 49px;
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $font-white;
+
+        &:hover {
+            cursor: url("../img/cursor.svg"), pointer;
+            background: #EB443F;
+        }
+    }
+}
+
+.content {
+    background: #000915;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    padding: 144px 0;
+
+    &__link:hover &__box {
+        cursor: url("../img/cursor.svg"), pointer;
+        border: 3px solid #44D2FF;
+        box-sizing: border-box;
+    }
+
+    &__link {
+        &:first-child .game__box {
+            background-image: url(../img/game-1.jpg);
+            @include bground ();
+        }
+
+        &:nth-child(2) .game__box {
+            background-image: url(../img/game-2.jpg);
+            @include bground ();
+            width: 378px;
+        }
+
+        &:nth-child(3) .game__box {
+            background-image: url(../img/game-3.jpg);
+            @include bground ();
+        }
+    }
+
+    &__box {
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $font-white;
+        padding: 0 0 32px 32px;
+    }
+}
