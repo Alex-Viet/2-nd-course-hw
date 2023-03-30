@@ -51,4 +51,3 @@ switch (monthNumber) {
         console.log('Нет такого месяца');   // Задание 5
         break;
 }*/
-
