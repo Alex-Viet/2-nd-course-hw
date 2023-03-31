@@ -72,29 +72,39 @@ body {
   gap: 32px;
   padding: 144px 0;
 }
-.game__link:hover .game__box {
-  cursor: url("../img/cursor.svg"), pointer;
-  border: 3px solid #44D2FF;
-  box-sizing: border-box;
-}
 .game__link:first-child .game__box {
-  background-image: url(../img/game-1.jpg);
+  background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../img/game-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .game__link:nth-child(2) .game__box {
-  background-image: url(../img/game-2.jpg);
+  background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../img/game-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 378px;
 }
 .game__link:nth-child(3) .game__box {
-  background-image: url(../img/game-3.jpg);
+  background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../img/game-3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.game__link:hover:first-child .game__box {
+  background-image: url(../img/game-1.png);
+}
+.game__link:hover:nth-child(2) .game__box {
+  background-image: url(../img/game-2.png);
+  width: 378px;
+}
+.game__link:hover:nth-child(3) .game__box {
+  background-image: url(../img/game-3.png);
+}
+.game__link:hover .game__box {
+  cursor: url("../img/cursor.svg"), pointer;
+  border: 3px solid #44D2FF;
+  box-sizing: border-box;
 }
 .game__box {
   width: 379px;
@@ -110,4 +120,45 @@ body {
   line-height: 32px;
   color: #FFFFFF;
   padding: 0 0 32px 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding: 0 16px;
+  }
+  .top {
+    height: 735px;
+  }
+  .top__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__title {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    padding-top: 238px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 30px;
+  }
+  .game {
+    padding: 130px 0;
+    justify-content: center;
+  }
+  .game__box {
+    width: 343px;
+  }
+  .game__link:nth-child(2) .game__box {
+    width: 343px;
+  }
+  .game__name {
+    padding: 0 0 32px 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
