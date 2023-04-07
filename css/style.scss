@@ -178,6 +178,11 @@ body {
         line-height: 32px;
         color: $font-white;
     }
+
+    &__img {
+        width: 485px;
+        height: 334px;
+    }
 }
 
 @import 'mobile';
