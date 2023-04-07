@@ -31,8 +31,27 @@ body {
     height: 100%;
 }
 
+.button {
+    width: 234px;
+    height: 49px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $font-white;
+
+    &:hover {
+        cursor: url("../img/cursor.svg"), pointer;
+        background: #EB443F;
+    }
+}
+
 .top {
-    height: 1024px;
     background-image: url(../img/bg-top.jpg);
     @include bground ();
 
@@ -57,24 +76,9 @@ body {
     }
 
     &__button {
-        width: 234px;
-        height: 49px;
-        background: #9C0332;
-        border-radius: 30px;
-        border: none;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: $font-white;
-
-        &:hover {
-            cursor: url("../img/cursor.svg"), pointer;
-            background: #EB443F;
-        }
+        margin-bottom: 493px;
     }
+
 }
 
 .content {
@@ -85,7 +89,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: $gap;
-    padding: 144px 0;
+    padding: 126px 0;
 
     &__link {
         &:first-child .game__box {
@@ -141,6 +145,38 @@ body {
         line-height: 32px;
         color: $font-white;
         padding: 0 0 32px 32px;
+    }
+}
+
+.seasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 233px 0;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        padding-top: 52px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: $font-white;
+    }
+
+    &__text {
+        width: 584px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $font-white;
     }
 }
 
