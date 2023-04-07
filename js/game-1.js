@@ -14,5 +14,3 @@ function guessSeason(monthNumber) {
         return console.log('В году всего 12 месяцев! Попробуйте еще раз');
     }
 }
-
-guessSeason();
