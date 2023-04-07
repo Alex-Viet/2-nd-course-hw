@@ -48,16 +48,43 @@ console.log(calcSqrt(13));*/   // Задание 3.2
 findAge();*/    // Задание 4
 
 
-/*function isNumb(a, b) {
-    return !isNaN(a) && !isNaN(b) ? a * b : console.log('Одно или оба значения не являются числом');
+/*function isNumb(a, b) {return !isNaN(a) && !isNaN(b) ? a * b : console.log('Одно или оба значения не являются числом');}
 
-    // if ( a !== isNaN(a) && b !== isNaN(b)) {
-    //     return a * b;
-    // } else {
-    //     return console.log('Одно или оба значения не являются числом');
-    // }
+console.log(isNumb(5, 11));*/    // Задание 5
 
+
+/*let cube = (n, result) => {
+    n = Number(prompt('Введите число'));
+    if (!isNaN(n)) {
+        result = n ** 3;
+        return console.log(`Число ${n} в кубе равняется ${result}`);
+    } else {
+        return console.log('Переданный параметр не является числом');
+    }
 }
 
-console.log(isNumb(5, 11));*/     // Задание 5
+cube();*/    // Задание 6
 
+
+/*function getArea() {
+    return Math.PI * this.radius ** 2;
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 2,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+}
+
+const circle2 = {
+    radius: 7,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+}
+
+console.log(`Площадь первого круга ${circle1.getArea()}, периметр первого круга ${circle1.getPerimeter()}`);
+console.log(`Площадь второго круга ${circle2.getArea()}, периметр второго круга ${circle2.getPerimeter()}`);*/   // Задание 7
