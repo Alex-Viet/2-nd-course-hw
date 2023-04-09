@@ -1,3 +1,64 @@
+ @-webkit-keyframes flicker-1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker-1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0;
+    }
+    43% {
+      opacity: 0;
+    }
+    43.01% {
+      opacity: 1;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    48% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    49.01% {
+      opacity: 1;
+    }
+  }
+
 $font-white: #FFFFFF;
 $width-game: 379px;
 $gap: 32px;
@@ -31,8 +92,31 @@ body {
     height: 100%;
 }
 
+.button {
+    width: 234px;
+    height: 49px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $font-white;
+    -webkit-animation: flicker-1 2s linear 5s 2 both;
+	animation: flicker-1 2s linear 5s 2 both;
+    transition: background .4s;
+    
+
+    &:hover {
+        cursor: url("../img/cursor.svg"), pointer;
+        background: #EB443F;
+    }
+}
+
 .top {
-    height: 1024px;
     background-image: url(../img/bg-top.jpg);
     @include bground ();
 
@@ -57,24 +141,9 @@ body {
     }
 
     &__button {
-        width: 234px;
-        height: 49px;
-        background: #9C0332;
-        border-radius: 30px;
-        border: none;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: $font-white;
-
-        &:hover {
-            cursor: url("../img/cursor.svg"), pointer;
-            background: #EB443F;
-        }
+        margin-bottom: 493px;
     }
+
 }
 
 .content {
@@ -85,45 +154,49 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: $gap;
-    padding: 144px 0;
+    padding: 126px 0;
 
     &__link {
-        &:first-child .game__box {
-            background-image: $bg-gradient, url(../img/game-1.png);
-            @include bground ();
-        }
+        position: relative;
 
-        &:nth-child(2) .game__box {
-            background-image: $bg-gradient, url(../img/game-2.png);
-            @include bground ();
-            width: 378px;
-        }
-
-        &:nth-child(3) .game__box {
-            background-image: $bg-gradient, url(../img/game-3.png);
-            @include bground ();
-        }
-    }
-
-    &__link:hover {
         &:first-child .game__box {
             background-image: url(../img/game-1.png);
+            @include bground ();
         }
 
         &:nth-child(2) .game__box {
             background-image: url(../img/game-2.png);
+            @include bground ();
             width: 378px;
         }
 
         &:nth-child(3) .game__box {
             background-image: url(../img/game-3.png);
+            @include bground ();
         }
     }
 
     &__link:hover &__box {
-        cursor: url("../img/cursor.svg"), pointer;
         border: 3px solid #44D2FF;
         box-sizing: border-box;
+    }
+
+    &__link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        background-image: $bg-gradient;
+        opacity: 1;
+        transition: opacity .4s;
+    }
+
+    &__link:hover::before {
+        cursor: url("../img/cursor.svg"), pointer;
+        opacity: 0;
     }
 
     &__box {
@@ -141,6 +214,43 @@ body {
         line-height: 32px;
         color: $font-white;
         padding: 0 0 32px 32px;
+    }
+}
+
+.seasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 233px 0;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        padding-top: 52px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: $font-white;
+    }
+
+    &__text {
+        width: 584px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $font-white;
+    }
+
+    &__img {
+        width: 485px;
+        height: 334px;
     }
 }
 
