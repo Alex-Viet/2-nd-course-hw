@@ -37,3 +37,36 @@ arr.sort();
 arr.pop();
 
 console.log(arr);*/     // Задание 6
+
+
+/*const numbers = [9, 8, 7, 6, 5];
+const userNumb = Number(prompt('Введите число от 1 до 10'));
+
+if (userNumb >= 1 && userNumb <=10) {
+   
+    if (numbers.includes(userNumb)) {
+        console.log('Такое число есть в массиве');
+    } else {
+        console.log('Такого числа нет в массиве');
+    }
+
+} else {
+    console.log('Число введено неверно');     // Задание 7
+}*/
+
+
+/*let line = 'abcdef';
+line = line.split('');
+line = line.reverse();
+line = line.join('')
+
+console.log(line);*/     // Задание 8
+
+
+/*const numb = [
+    [1, 2 ,3],
+    [4, 5, 6]
+];
+console.log(numb[0].concat(numb[1]));*/    // Задание 9
+
+
