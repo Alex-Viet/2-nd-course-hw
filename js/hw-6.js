@@ -29,6 +29,7 @@ console.log(arr);*/         // Задание 4
 
 /*const numbs = [1, 1, 1];
 numbs.push(2, 2, 2);
+
 console.log(numbs);*/    // Задание 5
 
 
@@ -67,6 +68,43 @@ console.log(line);*/     // Задание 8
     [1, 2 ,3],
     [4, 5, 6]
 ];
+
 console.log(numb[0].concat(numb[1]));*/    // Задание 9
 
 
+/*const numbs = [4, 7, 1, 5, 9, 8];
+
+for (let n = 0; n < numbs.length - 1; n++) {
+    console.log(numbs[n] + numbs[n + 1]);    // Задание 10
+}*/
+
+
+/*const numb = [4, 7, 5, 8];
+
+const sqrNumb = numb.map((getSqr) => getSqr ** 2);
+
+console.log(numb);
+console.log(sqrNumb);*/    // Задание 11
+
+
+/*const strng = ['JavaScript', 'не', 'так', '', 'прост', 'как', 'хотелось', 'бы'];
+
+const lengthWord = strng.map((getlengthWord) => getlengthWord.length);
+
+console.log(strng);
+console.log(lengthWord);*/    // Задание 12
+
+
+/*const int = [1, -3, -5, 4, 8, -3];
+// const negativeInt = int.filter((getNegativInt) => getNegativInt < 0); // 1 способ
+
+const negativeInt = int.filter(
+    function getNegativInt(el) {
+        if (el < 0) {
+            return true;  // 2 способ
+        }
+    } 
+);
+
+console.log(int);
+console.log(negativeInt);*/      // Задание 13
