@@ -81,30 +81,78 @@ for (let n = 0; n < numbs.length - 1; n++) {
 
 /*const numb = [4, 7, 5, 8];
 
-const sqrNumb = numb.map((getSqr) => getSqr ** 2);
+function getSqrNum() {
+    return numb.map((getSqr) => getSqr ** 2);
+}
+
+// const sqrNumb = numb.map((getSqr) => getSqr ** 2);
 
 console.log(numb);
-console.log(sqrNumb);*/    // Задание 11
+console.log(getSqrNum());*/    // Задание 11
 
 
 /*const strng = ['JavaScript', 'не', 'так', '', 'прост', 'как', 'хотелось', 'бы'];
 
-const lengthWord = strng.map((getlengthWord) => getlengthWord.length);
+function getlengthWord() {
+    return lengthWord = strng.map((el) => el.length);
+}
 
 console.log(strng);
-console.log(lengthWord);*/    // Задание 12
+console.log(getlengthWord());*/    // Задание 12
 
 
 /*const int = [1, -3, -5, 4, 8, -3];
-// const negativeInt = int.filter((getNegativInt) => getNegativInt < 0); // 1 способ
 
-const negativeInt = int.filter(
-    function getNegativInt(el) {
-        if (el < 0) {
-            return true;  // 2 способ
-        }
-    } 
-);
+function getNegativInt() {
+    negativeNum = int.filter((el) => el < 0);
+    return negativeNum;
+}
 
 console.log(int);
-console.log(negativeInt);*/      // Задание 13
+console.log(getNegativInt());*/      // Задание 13
+
+
+/*const random = [];
+
+function getRandomInt(min, max) {
+    min = 0;
+    max = 11;
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+for (let subRandom = 0; subRandom < 10; subRandom++) {
+    random.push(getRandomInt());
+}
+
+const evenNumb = random.filter(
+    function getEvenNumber(num) {
+        if (num % 2 === 0) {
+            return true;
+        } 
+    }
+)
+
+console.log(random);
+console.log(evenNumb);*/     // Задание 14
+
+
+/*const randomInt = [];
+
+function getRndmInt(min, max) {
+    min = 0;
+    max = 11;
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+for (let numb = 0; numb < 6; numb++) {
+    randomInt.push(getRndmInt());
+    
+}
+
+function getArithMean() {
+    let sum = randomInt.reduce((n, m) => (n + m));
+    return result = sum / randomInt.length;
+}
+
+console.log(randomInt);
+console.log(getArithMean());*/    // Задание 15
