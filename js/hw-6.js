@@ -1,8 +1,8 @@
 /*const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === 0) break;
-    console.log(numbers[i]);      // Задание 1
+    console.log(numbers[i]);
+    if (numbers[i] === 10) break;   // Задание 1
 }*/
 
 
@@ -115,13 +115,11 @@ console.log(getNegativInt());*/      // Задание 13
 /*const random = [];
 
 function getRandomInt(min, max) {
-    min = 0;
-    max = 11;
     return Math.floor(Math.random() * (max - min) + min);
 }
 
 for (let subRandom = 0; subRandom < 10; subRandom++) {
-    random.push(getRandomInt());
+    random.push(getRandomInt(0, 11));
 }
 
 const evenNumb = random.filter(
@@ -139,13 +137,11 @@ console.log(evenNumb);*/     // Задание 14
 /*const randomInt = [];
 
 function getRndmInt(min, max) {
-    min = 0;
-    max = 11;
     return Math.floor(Math.random() * (max - min) + min);
 }
 
 for (let numb = 0; numb < 6; numb++) {
-    randomInt.push(getRndmInt());
+    randomInt.push(getRndmInt(1, 11));
     
 }
 
@@ -155,4 +151,4 @@ function getArithMean() {
 }
 
 console.log(randomInt);
-console.log(getArithMean());*/    // Задание 15
+console.log(getArithMean());*/     // Задание 15
