@@ -51,3 +51,42 @@ console.log(getRandomArrNumb(11));*/   // Задание 6 - очень слож
 }
 
 console.log(getRandNumb(4, 9));*/   // Задание 7
+
+
+/*let curDate = new Date();
+console.log(curDate);*/     // Задание 8
+
+
+/*let currentDate = new Date();
+console.log(currentDate);
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);*/    // Задание 9
+
+
+/*const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+function showDate(day, month, year) {
+    let userDate = new Date(year, month - 1, day);
+    let fullDate = day + " " + months[month - 1] + " " + year;
+    let timeDate = new Date();
+    let hours = timeDate.getHours();
+    let minutes = timeDate.getMinutes();
+    let seconds = timeDate.getSeconds();
+
+    resDay = days[userDate.getDay()];
+    month = userDate.getMonth();
+    year = userDate.getFullYear();
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    
+    return `Дата: ${fullDate} - это ${resDay}.\nВремя: ${hours}:${minutes}:${seconds}`
+}
+
+console.log(showDate(13, 4, 2023));*/     // Задание 10
