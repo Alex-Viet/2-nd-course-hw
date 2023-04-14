@@ -34,19 +34,20 @@ console.log(minNum, maxNum);*/                  // Задание 4
 console.log(getRandomInt(1, 11));*/     // Задание 5
 
 
-let int;
-
-function getRandomArrNumbers(integer) {
-    const array = [];
-    array.length = Math.floor(integer / 2);
-
-    for (let i = 0; i < array.length; i++) {
-        array.fill(Math.floor(Math.random() * (integer + 1)));
-        
-        return array;
+/*function getRandomArrNumb(integer) {
+    let numbers = [];
+    for (let i = 0; i < integer; i++) {
+        numbers[i] = Math.floor(Math.random() * (integer + 1));
+        numbers.length = Math.floor(integer / 2);
     }
+    return numbers;
 }
 
-// array.fill(Math.floor(Math.random() * (integer + 1)));
-// getRandomArrNumbers(int);
-console.log(getRandomArrNumbers(10));
+console.log(getRandomArrNumb(11));*/   // Задание 6 - очень сложное было!:)
+
+
+/*function getRandNumb(min, max) {
+    return Math.round(Math.random() * (max - min) + min);
+}
+
+console.log(getRandNumb(4, 9));*/   // Задание 7
