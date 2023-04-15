@@ -48,7 +48,6 @@ body {
 }
 
 .button {
-  width: 234px;
   height: 49px;
   background: #9C0332;
   border-radius: 30px;
@@ -169,6 +168,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 64px;
+}
+.seasons_pos {
   padding: 233px 0;
 }
 .seasons__left {
@@ -195,6 +196,20 @@ body {
 .seasons__img {
   width: 485px;
   height: 334px;
+}
+.seasons__button {
+  width: 234px;
+}
+
+.memory_pos {
+  padding: 235px 0;
+}
+.memory__img {
+  width: 481px;
+  height: 332px;
+}
+.memory__button {
+  width: 240px;
 }
 
 @media (max-width: 767px) {
@@ -255,5 +270,16 @@ body {
   .seasons__img {
     width: 344px;
     height: 236px;
+  }
+  .memory {
+    display: flex;
+  }
+  .memory__img {
+    width: 344px;
+    height: 231px;
+    order: 1;
+  }
+  .memory__button {
+    width: 234px;
   }
 }/*# sourceMappingURL=style.css.map */
