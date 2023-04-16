@@ -76,4 +76,17 @@
             height: 236px;
         }
     }
+
+    .memory {
+        display: flex;
+        &__img {
+            width: 344px;
+            height: 231px;
+            order: 1;
+        }
+
+        &__button {
+            width: 234px;
+        }
+    }
 }
